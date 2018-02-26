@@ -54,7 +54,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Wall-B',
+            title: 'A React Quickstarter',
             minify: {
                 collapseWhitespace: true,
                 preserveLineBreaks: true,
