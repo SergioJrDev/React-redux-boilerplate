@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+#root { 
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  height: 100vh;
+  background: #81b7ef;
+}
