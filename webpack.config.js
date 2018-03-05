@@ -20,10 +20,11 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, "src"),
         compress: true,
-        port: 3000,
+        port: 8080,
         open: true,
         watchContentBase: true,
         inline: true,
+        historyApiFallback: true,
     },
     module: {
         rules: [

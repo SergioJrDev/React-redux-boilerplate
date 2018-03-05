@@ -1,14 +1,7 @@
-import React from 'react'
-import ccxt from 'ccxt'
-import { Home } from './Pages'
+import React from 'react';
+import AppRoutes from './Routes';
 
-class App extends React.Component {
-    render() {
-        return(
-            <Home />
-        )
-    }
-}
+const App = () => <AppRoutes />;
 
 
-export default App
+export default App;

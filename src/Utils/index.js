@@ -1,1 +1,1 @@
-export { default as IsNegative } from './IsNegative'
+export { default as IsNegative } from './IsNegative';
