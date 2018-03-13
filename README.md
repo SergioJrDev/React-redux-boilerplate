@@ -36,17 +36,16 @@ With the commands above, you have everything to start.
 ├── webpack.config.js
 ├── webpack.prod.js
 └── src/
+    ├── app.js
+    ├── index.html
+    ├── index.js
+    ├── style.scss
     ├── Components/
     ├── Pages/
     ├── Routes/
     ├── Services/
     ├── Store/
     ├── Utils/
-    ├── app.js
-    ├── index.html
-    ├── index.js
-    ├── style.scss
-
 ```
 
 ### Code Standarts
@@ -61,7 +60,7 @@ With the commands above, you have everything to start.
 
 ### Thanks
 
-Thanks to [@Diessicode](https://twitter.com/diessicode/status/715381477286891520) for the awesome idea to put this logo.
+[In Progress]
 
 ### License
 
