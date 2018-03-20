@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import './Home.style';
+import './Home.style.scss';
 
 class Home extends React.Component {
 
@@ -17,6 +18,10 @@ const mapStateToProps = ({ welcome }, props) => {
         welcome,
         ...props
     };
+};
+
+Home.propTypes = {
+    welcome: PropTypes.string.isRequired
 };
 
 export default connect(mapStateToProps)(Home);

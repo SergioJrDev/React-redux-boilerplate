@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rm -rf public && webpack --config webpack.prod.js",
     "start": "webpack-dev-server --color",
-    "parcel": "parcel watch public/index-dist.html",
+    "test": "jest",
     "heroku-postbuild": "npm run build"
   },
   "engines": {
@@ -19,7 +19,6 @@
     "antd": "^3.2.0",
     "axios": "^0.17.1",
     "babel": "^6.23.0",
-    "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -28,8 +27,8 @@
     "babel-preset-react": "^6.24.1",
     "ccxt": "^1.10.1000",
     "css-loader": "^0.28.9",
-    "extract-text-webpack-plugin": "^3.0.2",
     "extract-loader": "^1.0.2",
+    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^2.30.1",
@@ -37,9 +36,8 @@
     "http-server": "^0.11.1",
     "moment": "^2.20.1",
     "node-sass": "^4.7.2",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.20.1",
     "react": "^16.2.0",
+    "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
@@ -48,15 +46,28 @@
     "redux-form": "^7.2.3",
     "redux-form-antd": "0.0.15",
     "redux-thunk": "^2.2.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1",
     "webpack": "^3.10.0"
   },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./testConfig.js",
+    "moduleNameMapper": {
+      "^.+\\.(css|scss)$": "identity-obj-proxy"
+    }
+  },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^23.0.0-alpha.0",
     "cors-anywhere": "^0.4.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.18.2",
     "eslint-plugin-react": "^7.7.0",
-    "jest": "^22.2.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^22.4.2",
+    "jest-enzyme": "^6.0.0",
+    "regenerator-runtime": "^0.11.1",
     "webpack-bundle-analyzer": "^2.10.0",
     "webpack-dev-server": "^2.11.1"
   }
