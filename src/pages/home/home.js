@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Header } from './../../Components';
-import './Home.style.scss';
+import { Header } from './../../components';
+import './home.style.scss';
 
 class Home extends React.Component {
 
@@ -11,7 +11,9 @@ class Home extends React.Component {
         return (
             <div>
                 <Header />
-                <h1>{welcome}</h1>
+                <div className='container'>
+                    <h1>{welcome}</h1>
+                </div>
             </div>
         );
     }

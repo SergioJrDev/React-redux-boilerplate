@@ -6,7 +6,7 @@ import {
     Redirect,
 } from 'react-router-dom';
 
-import { Home } from './../Pages';
+import { Home } from './../pages';
 
 class AppRouter extends React.Component {
 
