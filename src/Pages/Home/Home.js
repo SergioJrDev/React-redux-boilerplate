@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Header } from './../../Components';
 import './Home.style.scss';
 
 class Home extends React.Component {
@@ -8,7 +9,10 @@ class Home extends React.Component {
     render() {
         const { welcome } = this.props;
         return (
-            <h1>{welcome}</h1>
+            <div>
+                <Header />
+                <h1>{welcome}</h1>
+            </div>
         );
     }
 }
