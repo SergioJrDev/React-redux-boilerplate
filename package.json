@@ -8,7 +8,8 @@
     "start": "webpack-dev-server --color",
     "test": "jest --watch",
     "heroku-postbuild": "npm run build",
-    "storybook": "start-storybook -p 9001 -c src/.storybook"
+    "storybook": "start-storybook -p 9001 -c src/.storybook",
+    "eslint:fix": "node_modules/.bin/eslint src --fix"
   },
   "engines": {
     "node": "8.9.4"
@@ -70,7 +71,7 @@
     "cors-anywhere": "^0.4.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "^4.18.2",
+    "eslint": "^4.19.1",
     "eslint-plugin-class-property": "^1.1.0",
     "eslint-plugin-react": "^7.7.0",
     "identity-obj-proxy": "^3.0.0",

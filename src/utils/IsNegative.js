@@ -1,3 +1,3 @@
-const IsNegative = value => /\-/.test(value);
+const IsNegative = value => /-/.test(value);
 
 export default IsNegative;

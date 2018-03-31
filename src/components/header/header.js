@@ -20,32 +20,32 @@ const Flex = styled.div`
 `;
 
 class Header extends React.Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         openMenu: false,
-    //     };
-    // }
+  // constructor(props) {
+  //     super(props);
+  //     this.state = {
+  //         openMenu: false,
+  //     };
+  // }
 
-    // /*eslint-disable*/
-    // printMessage = message => console.log(message);
-    // /*eslint-enable*/
+  // /*eslint-disable*/
+  // printMessage = message => console.log(message);
+  // /*eslint-enable*/
 
-    // sendMessage = (message) => this.printMessage(message);
+  // sendMessage = (message) => this.printMessage(message);
 
-    // openMenu = () => this.setState({openMenu: !this.state.openMenu})
+  // openMenu = () => this.setState({openMenu: !this.state.openMenu})
 
-    render() {
-        return (
-            <Wrapper>
-                <div className='container'>
-                    <Flex>
-                        <h1>React Redux Boilerplate</h1>
-                    </Flex>
-                </div>
-            </Wrapper>
-        );
-    }
+  render() {
+    return (
+      <Wrapper>
+        <div className='container'>
+          <Flex>
+            <h1>React Redux Boilerplate</h1>
+          </Flex>
+        </div>
+      </Wrapper>
+    );
+  }
 }
 
 export default Header;
