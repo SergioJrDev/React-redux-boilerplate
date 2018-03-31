@@ -2,6 +2,7 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require("webpack");
 
 module.exports = {
   devtool: 'source-map',
@@ -22,13 +23,13 @@ module.exports = {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader']
+          use: ['css-loader', 'sass-loader'],
         }),
         exclude: /node_modules/,
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(js|jsx)$/,
@@ -68,7 +69,10 @@ module.exports = {
     //if you want to pass in options, you can do so:
     new ExtractTextPlugin({
       filename: 'style.css',
-      allChunks: true
+      allChunks: true,
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      minimize: true
     })
   ]
 };
