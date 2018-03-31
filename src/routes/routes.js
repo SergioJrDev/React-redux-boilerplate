@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 
 import { Home } from './../pages';
+const History = () => <p>History</p>;
 
 class AppRouter extends React.Component {
 
@@ -15,6 +16,7 @@ class AppRouter extends React.Component {
       <Router>
         <Switch>
           <Route exact path='/inicio' component={Home} />
+          <Route exact path='/history' component={History} />
           <Redirect to='/inicio' />
         </Switch>
       </Router>
