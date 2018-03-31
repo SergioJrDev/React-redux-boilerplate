@@ -25,6 +25,7 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "braintree-web": "^3.31.0",
     "ccxt": "^1.10.1000",
     "css-loader": "^0.28.9",
     "extract-loader": "^1.0.2",
@@ -76,6 +77,7 @@
     "jest": "^22.4.2",
     "jest-enzyme": "^6.0.0",
     "regenerator-runtime": "^0.11.1",
+    "script-loader": "^0.7.2",
     "webpack-bundle-analyzer": "^2.10.0",
     "webpack-dev-server": "^2.11.1"
   }
